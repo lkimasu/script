@@ -13,3 +13,7 @@ Using the [Invoke-command](https://learn.microsoft.com/ko-kr/powershell/module/m
 # [Dns_Change_Window](https://github.com/lkimasu/script/tree/main/dns_change_window)
 
 Change DNS server IP using CMD, PowerShell in Windows 2008, 2012 or later environment
+
+# [window_Mount_Check(python)](https://github.com/lkimasu/script/tree/master/window_Mount_Check(python))
+
+Check cpu, memory, disk utilization and capacity of each drive (local, network) using Python script in Windows environment
