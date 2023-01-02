@@ -1,4 +1,7 @@
 import psutil
+import shutil
+
+import wmi
 
 mem=psutil.virtual_memory()
 print('memory usage :', mem[2] ,'%')
@@ -13,7 +16,7 @@ print('disk usage :', disk.percent,'%')
 
 partitions = psutil.disk_partitions()
 
-#C,D 드라이브
+#로컬 드라이브
 for i in partitions:
     print(i.mountpoint)
     try:
@@ -24,3 +27,13 @@ for i in partitions:
     except:
         pass
 
+
+path = "X:/"
+
+stat = shutil.disk_usage(path)
+network_used = round((stat.used)/1024/1024/1024/1024,2)
+network_free = round((stat.free)//1024/1024/1024/1024,2)
+network_total = round((stat.total)/1024/1024/1024/1024,2)
+print('network_total: %f GB' % network_total)
+print('network_used: %f GB' % network_used)
+print('network_free: %f GB' % network_free)
