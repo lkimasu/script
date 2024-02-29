@@ -20,5 +20,5 @@ EMAIL_PASSWORD = 'password'
 RECIPIENT_EMAIL = 'test@gmail.com' 
 ```
 
-CPU와 Memory를 확인하여 80% 이상인 경우 메일을 보냅니다.
+CPU와 Memory를 확인하여 80% 이상인 경우 메일을 보냅니다.<br>
 HostName, CPU Percent, Memory Percent, Top 5 CPU process, Top 5 memory process를 확인할 수 있습니다.
