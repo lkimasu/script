@@ -4,10 +4,11 @@
 
 ## cpu_memory_use
 
-이 스크립트는 파이썬 환경에서 CPU와 메모리 사용량을 확인합니다. 사용량이 80% 이상인 경우 관리자에게 이메일을 보냅니다.
-로컬 환경에는 Python과 pip가 설치되어 있어야 합니다.
-이메일 설정은 `config.py` 파일에서 수정할 수 있습니다.
-저는 구글 SMTP 서버를 사용했습니다.
+이 스크립트는 파이썬 환경에서 CPU와 메모리 사용량을 확인합니다.<br> 
+사용량이 80% 이상인 경우 관리자에게 이메일을 보냅니다.<br>
+로컬 환경에는 Python과 pip가 설치되어 있어야 합니다.<br>
+이메일 설정은 `config.py` 파일에서 수정할 수 있습니다.<br>
+저는 구글 SMTP 서버를 사용했습니다. <br>
 
 예시:
 
@@ -16,8 +17,7 @@ SMTP_SERVER = 'smtp.gmail.com'
 SMTP_PORT = 587
 EMAIL_ADDRESS = 'test@gmail.com'
 EMAIL_PASSWORD = 'password'
-RECIPIENT_EMAIL = 'test@gmail.com'
+RECIPIENT_EMAIL = 'test@gmail.com' <br>
 
-
-프로그램을 실행하면 Cpu,Memory를 확인을 해서 80% 이상일 경우 메일을 보내고 <br>
-HostName,Cpu Percent,Memory Percent, Top5 cpu process,Top5 memory process를 확인 할 수 있습니다.<br> 
+CPU와 Memory를 확인하여 80% 이상인 경우 메일을 보냅니다.
+HostName, CPU Percent, Memory Percent, Top 5 CPU process, Top 5 memory process를 확인할 수 있습니다.
